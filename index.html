@@ -96,7 +96,7 @@
               
      <div class  = "navbar" align = "center">
         <a href="#" class="ui-btn-active ui-state-persist ui-btn ui-btn-inline" >Home</a>
-        <a href="#pagetwo" class="ui-btn ui-btn-inline">How to Reach Indore</a>
+        <a href="#pagetwo" data-transition="flow" class="ui-btn ui-btn-inline">How to Reach Indore</a>
         <a href="#pagethree"  class="ui-btn ui-btn-inline">Places to Stay</a>
         <a href="#pagefour"  class="ui-btn ui-btn-inline">Restaurants</a>
         <a href="#pagefive"  class="ui-btn ui-btn-inline">Map</a>
@@ -131,16 +131,20 @@
 </br>
       </div>
       <div class="col-md-10">
-        <div class="row">
+              <form>
+              <input  data-type="search" id="divOfPs-input">
+            </form>
+        <div class="row elements " data-filter="true" data-input="#divOfPs-input" >
 
 
 
-
-        <div class="col-md-4 np"   align = "center">
+          <a href = "#ralamandal">
+        <div class="col-md-4 np"   align = "center" >
           <img src = "1.jpg" class="img-circle" align ="center" height = "150"  width = "150"></img>
           </br>
           <h3 align = "center">Ralamandal</h3>
          </div>
+         </a>
 
 
          <div class="col-md-4 np" align = "center">
@@ -384,6 +388,125 @@ Indore is well connected by road. State run and private buses from Mumbai, Pune,
    <!--  <h1><b>"Indore Meri Jaan"</b></h1> -->
   </div>
 </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-role="page" id="ralamandal">
+  
+
+  <div data-role="header">
+   
+              
+     <div class  = "navbar" align = "center">
+        <a href="#pageone" class="ui-btn-active ui-state-persist ui-btn ui-btn-inline" >Home</a>
+        <a href="#pagetwo" class="ui-btn ui-btn-inline">How to Reach Indore</a>
+        <a href="#pagethree"  class="ui-btn ui-btn-inline">Places to Stay</a>
+        <a href="#pagefour"  class="ui-btn ui-btn-inline">Restaurants</a>
+        <a href="#pagefive"  class="ui-btn ui-btn-inline">Map</a>
+        <a href="#pagesix"  class="ui-btn ui-btn-inline">About Us</a>
+        </div>
+         <h1>Welcome To My Homepage</h1>
+      
+   
+  </div>
+
+  <div data-role="main" class="ui-content">
+    
+     <div class="row">
+      <div class="col-md-2" id = "b">
+       </br></br><h2>Categories</h2></br></br>
+    <ul data-role="listview">
+      <li><a href = "#pageone" onclick="al()" >All</a></li>
+      <li><a href = "#pageone" onclick="sl()" >Sights & Landmark</a></li>
+      <li><a href = "#pageone" onclick="np()" >Nature & Park</a></li>
+      <li><a href = "#pageone" onclick="sh()" >Shopping</a></li>
+      <li><a href = "#pageone" onclick="wf()" >Water Falls</a></li>
+      <li><a href = "#pageone" onclick="wp()" >Water Parks</a></li>
+                
+             </ul> 
+      <!-- <div data-role="controlgroup" data-type="vertical">
+      <p>Vertical group (default):</p>
+      <a href="#" class="ui-btn ui-btn-inline">Button 1</a></br>
+      <a href="#" class="ui-btn ui-btn-inline">Button 2</a></br>
+      <a href="#" class="ui-btn ui-btn-inline">Button 3</a>
+          </div> -->
+</br>
+</br>
+      </div>
+      <div class="col-md-10">
+      <div class="row">
+    
+      
+      <div class="col-md-3" align = "center">
+      <br><br><br>
+      <img src="rala2.jpg" height="300" width="250" >
+      
+
+      </div>
+
+      <div class="col-md-6" align = "center">
+<br>
+<h1>Ralamandal</h1>      
+      The Ralamandal Wildlife Sanctuary is established in the year 1989. The Sanctuary is spread over a total areaof 5 sq.km. 
+Ralamandal Wildlife Sanctuary offers a wide variety of flora and fauna as a treat to your eyes.
+There is a hunting hut that was constructed by the people of Holkar State in 1905 which is now being transformed into 
+an information centre. The scenic beauty of the place adds a charm to the place. The park is a perfect site for trekking 
+enthusiasts and gives a lot of chances to explore the quintessential fauna it pertains.
+
+Main Info :
+Visit timing – 8:30 AM to 6:30 PM
+Visit duration : A Full Day.
+Open for all days of the week.
+</br>
+</div>
+
+<div class="col-md-3" align = "center">
+<br><br><br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14729.07530456339!2d75.91110161802509!3d22.64376351609204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e4bd0e7115ab%3A0xc05c014f89218c31!2sRalamandal+Sanctuary!5e0!3m2!1sen!2sin!4v1484481110373" width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+
+</div>
+ 
+      </div>
+   
+    </div>
+    
+
+
+
+  </div>
+
+ <!--  <div data-role="footer">
+    <h1><b>"Indore Meri Jaan"</b></h1>
+  </div>  -->
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
