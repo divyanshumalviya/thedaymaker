@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title> The Day Maker </title>
+<meta name="description" content="providing the information about best places for a visit in Indore.">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -9,7 +12,58 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript">
   
-           
+       function sl(){
+          $("div").filter(".sl").show();
+          $("div").filter(".np").hide();
+          $("div").filter(".sh").hide();
+          $("div").filter(".wf").hide();
+          $("div").filter(".wp").hide();
+       }
+       function np(){
+          $("div").filter(".sl").hide();
+          $("div").filter(".np").show();
+          $("div").filter(".sh").hide();
+          $("div").filter(".wf").hide();
+          $("div").filter(".wp").hide();
+       }
+
+       function sh(){
+          $("div").filter(".sl").hide();
+          $("div").filter(".np").hide();
+          $("div").filter(".sh").show();
+          $("div").filter(".wf").hide();
+          $("div").filter(".wp").hide();
+       }
+       function wf(){
+          $("div").filter(".sl").hide();
+          $("div").filter(".np").hide();
+          $("div").filter(".sh").hide();
+          $("div").filter(".wf").show();
+          $("div").filter(".wp").hide();
+       }
+
+       function wp(){
+          $("div").filter(".sl").hide();
+          $("div").filter(".np").hide();
+          $("div").filter(".sh").hide();
+          $("div").filter(".wf").hide();
+          $("div").filter(".wp").show();
+       }
+
+
+       function al(){
+          $("div").filter(".sl").show();
+          $("div").filter(".np").show();
+          $("div").filter(".sh").show();
+          $("div").filter(".wf").show();
+          $("div").filter(".wp").show();
+          /*alert('hi');*/
+          
+       }
+
+
+        
+                 
 </script>
 <style type="text/css">
 [data-role=page]{height: 100% !important; position:relative !important;}
@@ -17,6 +71,19 @@
 .col-md-10{
   background-image: url()
 } 
+
+.img-circle:hover {
+  -webkit-transform: rotate(15deg) scale(1.4);
+  transform: rotate(15deg) scale(1.4);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+/*.img-circle:hover  {
+  -webkit-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+}
+*/
+
 </style>
 </head>
 <body>
@@ -46,11 +113,12 @@
       <div class="col-md-2" id = "b">
        </br></br><h2>Categories</h2></br></br>
     <ul data-role="listview">
-      <li><a href="#Sights & Landmark">Sights & Landmark</a></li>
-      <li><a href="#">Nature & Park</a></li>
-      <li><a href="#">Shopping</a></li>
-      <li><a href="#">Water Falls</a></li>
-      <li><a href="#">Water Parks</a></li>
+      <li><a  onclick="al()" >All</a></li>
+      <li><a  onclick="sl()" >Sights & Landmark</a></li>
+      <li><a  onclick="np()">Nature & Park</a></li>
+      <li><a  onclick="sh()">Shopping</a></li>
+      <li><a  onclick="wf()">Water Falls</a></li>
+      <li><a  onclick="wp()">Water Parks</a></li>
                 
              </ul> 
       <!-- <div data-role="controlgroup" data-type="vertical">
@@ -63,10 +131,92 @@
 </br>
       </div>
       <div class="col-md-10">
-        <a href="#pagetwo"  data-transition="fade">Fade to Page Two</a>
-                  https://www.google.nl/search?tbm=isch&q=findSomeImage
-                  </br>
-                </br>
+        <div class="row">
+
+
+
+
+        <div class="col-md-4 np"   align = "center">
+          <img src = "1.jpg" class="img-circle" align ="center" height = "150"  width = "150"></img>
+          </br>
+          <h3 align = "center">Ralamandal</h3>
+         </div>
+
+
+         <div class="col-md-4 np" align = "center">
+          <img src = "zoo1.jpg" class="img-circle" align ="center" height = "150"  width = "150"></img>
+          </br>
+          <h3 align = "center">Kamla Nehru Park</h3>
+         </div>
+
+
+         <div class="col-md-4 sl" align = "center">
+          <img src = "rajwada.jpg" class="img-circle" align ="center" height = "150"  width = "150"></img>
+          </br>
+          <h3 align = "center">Rajwada</h3>
+         </div>
+
+
+
+
+         <div class="col-md-4 sl"  align = "center">
+          <img src = "gnpti1.jpg" class="img-circle" align ="center" height = "150"  width = "150"></img>
+          </br>
+          <h3 align = "center">Bada Ganpati</h3>
+         </div>
+
+
+         <div class="col-md-4 sh" align = "center">
+          <img src = "ti2.jpg" class="img-circle" align ="center" height = "150"  width = "150"></img>
+          </br>
+          <h3 align = "center">Treasure Island</h3>
+         </div>
+
+
+         <div class="col-md-4 sh" align = "center">
+          <img src = "central1.jpg" class="img-circle" align ="center" height = "150"  width = "150"></img>
+          </br>
+          <h3 align = "center">Central Mall</h3>
+         </div>
+
+
+
+         <div class="col-md-4 wf"  align = "center">
+          <img src = "patal1.jpg" class="img-circle" align ="center" height = "150"  width = "150"></img>
+          </br>
+          <h3 align = "center">Patalpani Waterfall</h3>
+         </div>
+
+
+         <div class="col-md-4 wf" align = "center">
+          <img src = "tincha1.jpg" class="img-circle" align ="center" height = "150"  width = "150"></img>
+          </br>
+          <h3 align = "center">Tincha Waterfall</h3>
+         </div>
+
+
+         <div class="col-md-4 wp" align = "center">
+          <img src = "mayank1.jpg" class="img-circle" align ="center" height = "150"  width = "150"></img>
+          </br>
+          <h3 align = "center">Mayank Blue Water Park</h3>
+         </div>
+
+
+
+        <div class="col-md-4 wp" align = "center">
+          <img src = "cre1.jpg" class="img-circle" align ="center" height = "150"  width = "150"></img>
+          </br>
+          <h3 align = "center">Crescent Water Park</h3>
+         </div>
+
+
+
+
+          
+
+
+        </div>
+
  
       </div>
    
@@ -77,9 +227,9 @@
 
   </div>
 
-  <div data-role="footer">
-    <!-- <h1><b>"Indore Meri Jaan"</b></h1> -->
-  </div> 
+ <!--  <div data-role="footer">
+    <h1><b>"Indore Meri Jaan"</b></h1>
+  </div>  -->
 </div> 
 
 <div data-role="page" id="pagetwo">
